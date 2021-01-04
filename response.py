@@ -18,7 +18,7 @@ import json
 #print(iss)
 #response = requests.get("api.openweathermap.org/data/2.5/forecast?zip=07722,us")
 #print(response.content.decode('utf-8'))
-api_key = "ee408c8faea605d4fd2261854b44f094"
+api_key = "localvar"
 
 # base_url variable to store url
 base_url = "http://api.openweathermap.org/data/2.5/weather?"
