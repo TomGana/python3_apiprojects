@@ -1,6 +1,6 @@
 	# Make a get request to get the latest position of the international space station from the opennotify api.
 from pip._vendor import requests
-
+import os
 import json
 #response = requests.get("http://api.open-notify.org/iss-now.json")
 # Print the status code of the response.
@@ -18,7 +18,7 @@ import json
 #print(iss)
 #response = requests.get("api.openweathermap.org/data/2.5/forecast?zip=07722,us")
 #print(response.content.decode('utf-8'))
-api_key = "localvar"
+api_key = os.environ.get("weather_key")
 
 # base_url variable to store url
 base_url = "http://api.openweathermap.org/data/2.5/weather?"
